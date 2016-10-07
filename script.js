@@ -2,8 +2,8 @@ function getQuote() {
   var first = $('#first').val();
   console.log(first);
   var last = $('#last').val();
-  if (first = '') {
-    console.log("NOOOOOOO")
+  if (first == '') {
+    console.log("NOOOOOOO");
     first = 'David';
     last = 'Gaynor';
   }
@@ -11,6 +11,5 @@ function getQuote() {
     $('#quote').html(data.value.joke);
   });
 };
-console.log("stuff");
 getQuote();
 $('#get_quote').click(getQuote);
