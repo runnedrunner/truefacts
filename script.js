@@ -2,7 +2,7 @@ function getQuote() {
   var first = $('#first').val();
   console.log(first);
   var last = $('#last').val();
-  if (first = '' & last = '') {
+  if (first = '') {
     console.log("NOOOOOOO")
     first = 'David';
     last = 'Gaynor';
