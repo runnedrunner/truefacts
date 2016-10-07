@@ -4,10 +4,10 @@ function getQuote() {
   var last = $('#last').val();
   if (!first) {
     console.log("NOOOOOOO");
-    first = 'David';
-    last = 'Gaynor';
+    first = "David";
+    last = "Gaynor";
   }
-  $.getJSON('https://api.icndb.com/jokes/random?firstName=' + first + '&lastName=' + last, function(data) {
+  $.getJSON("https://api.icndb.com/jokes/random?firstName=" + first + "&lastName=" + last, function(data) {
     $('#quote').html(data.value.joke);
   });
 };
