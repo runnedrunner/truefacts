@@ -1,9 +1,11 @@
 function getQuote() {
-  $.getJSON('https://api.icndb.com/jokes/random?firstName=' + FirstName + 'lastName, function(data) {
+  $.getJSON('https://api.icndb.com/jokes/random?firstName=' + first + '&lastName=' + last, function(data) {
     $('#quote').html(data.value.joke);
     console.log("blah");
   });
 };
 console.log("stuff");
+var first = 'Austin';
+var 
 getQuote();
 $('#get_quote').click(getQuote);
