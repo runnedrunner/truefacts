@@ -5,7 +5,7 @@ function getQuote() {
   });
 };
 console.log("stuff");
-var first = 'Austin';
-var 
+var first = 'David';
+var last = 'Gaynor';
 getQuote();
 $('#get_quote').click(getQuote);
